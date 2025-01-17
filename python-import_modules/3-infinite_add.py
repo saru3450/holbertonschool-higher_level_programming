@@ -5,5 +5,5 @@ if __name__ == "__main__":
     arg = len(argv)
     result = 0
     for i in range(1, arg):
-        result +=int(argv[i])
+        result += int(argv[i])
     print(result)
