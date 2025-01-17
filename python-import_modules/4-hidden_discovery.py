@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import hidden_4
-    for sort in dir(hidden_4):
-        if sort[1] != "_":
-            print(sort)
+    for name in dir(hidden_4):
+        if name[1] != "_":
+            print(name)
