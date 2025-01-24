@@ -10,6 +10,10 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
+
+    text = text.strip()
+    if not text:
+        return
     
     i = 0
     while i < len(text):
