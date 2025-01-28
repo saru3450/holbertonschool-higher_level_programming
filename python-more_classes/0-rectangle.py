@@ -4,8 +4,5 @@
 '''
 
 
-
-class rectangle:
-    '''
-    defines a rectangle
-    '''
+class Rectangle:
+    ''' defines a rectangle'''
