@@ -42,9 +42,10 @@ class Rectangle:
             return 0
         return (self.__width + self.__height) * 2
 
-    def str(self):
-        if self.__str == 0:
-            print()
-        for item in range(self.__str):
-            [print("#", end="") for j in range(self.__str)]
-            print()
+    def __str__(self):
+        if self.width == 0 or self.height:
+            return ""
+        rectan = []
+        for i in range(self.__height):
+            rectan.append("#" * self.width)
+        return '\n'.join(rectan)
