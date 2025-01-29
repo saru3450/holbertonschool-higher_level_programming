@@ -51,9 +51,9 @@ class Rectangle:
             return ""
         else:
             symbol = getattr(self, "print_symbol")
+            rectan = []
             for i in range(self.__height):
-                rectan = []
-                rectan.append(str(symbole) * self.__width)
+                rectan.append(str(symbol) * self.__width)
             return '\n'.join(rectan)
 
         for i in range(self.__height):
