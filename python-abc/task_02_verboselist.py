@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Create a class named VerboseList : 
+Create a class named VerboseList :
 inherits from the built-in list class.
 """
 
@@ -9,7 +9,7 @@ class VerboseList(list):
     """
     class
     """
-    def append(self , item):
+    def append(self, item):
         print("Added [{}] to the list.".format(item))
         super().append(item)
 
@@ -21,7 +21,7 @@ class VerboseList(list):
         print("Removed [{}] from the list.".format(item))
         super().remove(item)
 
-    def pop(self, item = -1 ):
+    def pop(self, item=-1):
         print("Popped [{}] from the list.".format(self[item]))
         super().pop(item)
         return super().pop(item)
