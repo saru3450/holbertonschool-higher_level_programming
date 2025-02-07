@@ -9,6 +9,7 @@ class VerboseList(list):
     """
     class
     """
+
     def append(self, item):
         print("Added [{}] to the list.".format(item))
         super().append(item)
