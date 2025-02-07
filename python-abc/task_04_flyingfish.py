@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-Construct a FlyingFish class that inherits from both a Fish
-class and a Bird class. Within FlyingFish
-"""
-
 
 class Fish:
     def swim(self):
