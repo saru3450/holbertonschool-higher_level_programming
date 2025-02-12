@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-adds all arguments to a Python lis
+Adds all arguments to a Python list and saves them to a JSON file.
 """
-
 
 import sys
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import('6-load_from_json_file').load_from_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+
 
 arglist = list(sys.argv[1:])
 
@@ -15,5 +15,5 @@ try:
 except Exception:
     old_data = []
 
-old_data.extend{arglist}
+old_data.extend(arglist)
 save_to_json_file(old_data, 'add_item.json')
