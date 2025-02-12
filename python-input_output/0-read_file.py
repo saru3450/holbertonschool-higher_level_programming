@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-that reads a text file (UTF8)
+The function reads a texte file
 """
 
 
 def read_file(filename=""):
     """
-     function that reads a text file
+    the function read_file
     """
-    with open(filename, encoding="utf-8") as f:
-        f.read = file.read()
-        print(f.read(), end="")
+    with open(filename, encoding="utf-8") as file:
+        readfile = file.read()
+        print(readfile, end="")
         file.close()
