@@ -1,22 +1,21 @@
 #!/usr/bin/python3
 """
-lists of integers representing the Pascal
+the function return a list of list
 """
 
 
 def pascal_triangle(n):
     """
-    function def pascal_triangle(n)
+    function pascal_triangle
     """
     if n <= 0:
         return []
 
     triangle = [[1]]
-    while len(triangle) == n:
-        tri = triangle[-1]
-        tmp = [1]
-        for i in range(len(tri) - 1):
-            tmp.append(tri[i] + tri(i + 1))
-        tmp.append(i)
-        triangle.append(tmp)
+    for x in range(1, n):
+        row = [1]
+        for y in range(1, x):
+            row.append(triangle[x - 1][y - 1] + triangle[x - 1][y])
+        row.append(1)
+        triangle.append(row)
     return triangle
