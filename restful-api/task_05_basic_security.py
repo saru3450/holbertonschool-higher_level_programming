@@ -37,7 +37,7 @@ jwt = JWTManager(app)
 
 @auth.verify_password
 def verify_password(username, password):
-    user = user.get
+    user = user.get(username)
     if User and check_password_hash(User["password"], password):
         return username
     return None
