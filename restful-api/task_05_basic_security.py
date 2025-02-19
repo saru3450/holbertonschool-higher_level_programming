@@ -59,7 +59,7 @@ def login():
 
     user = user.get(username)
     if user and check_password_hash(user['password'], password):
-         token = create_access_token(identity=username)
+        token = create_access_token(identity=username)
         return jsonify(acces_token=token), 200
 
     return jsonify({"message": "Bad username or password"})
