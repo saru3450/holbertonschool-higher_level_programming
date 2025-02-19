@@ -13,10 +13,10 @@ import json
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
     """
-     creating a subclass of http.server.BaseHTTPRequestHandler
-     """
-     def do_GET(self):
-         if self.path == "/":
+    creating a subclass of http.server.BaseHTTPRequestHandler
+    """
+    def do_GET(self):
+        if self.path == "/":
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
@@ -40,7 +40,11 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.wfile.write(b"Endpoint not found")
 
 
-def run(server_class=HTTPServer, handler_class=SimpleHTTPRequestHandler, port=8000):
+def run(
+    server_class=HTTPServer,
+    handler_class=SimpleHTTPRequestHandler,
+    port=8000
+):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print(f"Starting server on port {port}...")
