@@ -1,5 +1,3 @@
-document.getElementById('add_item').addEventListener('click', function () {
-  let newItem = document.createElement('li');
-    newItem.textContent = 'Item';
-    document.querySelector('.my_list').appendChild(newItem);
+document.getElementById('update_header').addEventListener('click', function () {
+  document.querySelector('header').textContent = 'New Header!!!';
 });
