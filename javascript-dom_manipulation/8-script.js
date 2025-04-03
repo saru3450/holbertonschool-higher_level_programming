@@ -1,13 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("https://swapi-api.hbtn.io/api/films/?format=json")
+  fetch("https://hellosalut.stefanbohacek.dev/?lang=fr")
     .then(response => response.json())
     .then(data => {
-      const list = document.getElementById('list_movies');
-        for (let movie of data.results) {
-          let li = document.createElement('li');
-          li.textContent = movie.title;
-          list.appendChild(li);
-        }
+      document.getElementById("hello").textContent = data.hello;
     })
-    .catch(error => console.error('Erreur :', error));
+      .catch(error => console.error("Erreur :", error));
 });
