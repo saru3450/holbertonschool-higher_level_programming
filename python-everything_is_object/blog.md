@@ -1,9 +1,3 @@
-# Understanding Python's Mutable and Immutable Objects
-
-![Image of Python coding concepts](https://via.placeholder.com/800x400)
-
----
-
 ## Introduction
 
 Python is an incredible language that is both beginner-friendly and powerful. Today, we’re diving into the exciting world of **mutable and immutable objects**! This post will cover their differences, why they matter, and how they interact with Python functions. Whether you’re a Python newbie or want to solidify your knowledge, let’s break it all down!
